@@ -190,6 +190,7 @@ a.article-card:hover {
 .article-short .article-description {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .article-short h3 {
