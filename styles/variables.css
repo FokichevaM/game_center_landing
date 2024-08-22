@@ -1,0 +1,26 @@
+:root {
+  --header-height: 100px;
+  --sub-header-height: 60px;
+  --header-bg: #12253e;
+  --sub-header-bg: #183354;
+
+  --badge-red-bg: #f4796c;
+  --badge-color: #fff;
+  --badge-border-color: #b8c1cd;
+  --badge-bordered-color: #6d757f;
+  --badge-line-color: #dfdfdf;
+
+  --container-lg-width: 1320px;
+  --container-gap: 15px;
+
+  --article-info-color: #bacce1;
+  --article-info-color-darker: #6d757f;
+  --article-title-color: #183354;
+
+  --f-inter: "Inter", sans-serif;
+  --f-manrope: "Manrope", sans-serif;
+
+  --footer-bg: #0c1622;
+
+  --form-bg: #e8f1f1;
+}

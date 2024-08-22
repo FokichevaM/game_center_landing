@@ -1,0 +1,130 @@
+footer {
+  background-color: var(--footer-bg);
+  font-family: var(--f-inter);
+}
+
+footer hr {
+  margin: 0;
+  border-color: #202e3f;
+}
+
+footer .footer__top {
+  width: 100%;
+  padding: 200px 0 100px 0;
+  color: #bacce1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .footer__top .brand-info {
+  max-width: 260px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #bacce1;
+}
+
+footer .footer__top .brand-info p {
+  margin: 20px 0 0 0;
+}
+
+footer .footer__top .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer__top .links .links__title {
+  font-family: var(--f-manrope);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+footer .footer__top .links .links__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url("../assets/svg/title-underline.svg") no-repeat;
+  width: 35px;
+  height: 5px;
+  transform: translateY(20px);
+}
+
+footer .footer__top .links a {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #bacce1;
+}
+
+footer .footer__bottom {
+  width: 100%;
+  padding: 35px 0;
+}
+
+footer .footer__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #7c91aa;
+}
+
+footer .footer__bottom a {
+  position: relative;
+}
+
+footer .footer__bottom a:not(:last-child) {
+  margin-right: 24px;
+}
+
+footer .footer__bottom a:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #7c91aa;
+  top: 50%;
+  right: -10px;
+  transform: translate(100%, -50%);
+}
+
+footer .footer__bottom_info {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 400px) {
+  footer .footer__top {
+    padding: 50px 0;
+    gap: 40px 10px;
+  }
+
+  footer .footer__top .brand-info {
+    max-width: none;
+  }
+
+  footer .footer__top .brand-info p {
+    margin: 0;
+  }
+
+  footer .footer__top .links {
+    padding-left: 10px;
+  }
+
+  footer .footer__bottom {
+    justify-content: center;
+  }
+
+  footer .footer__bottom_info {
+    margin: 40px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+}

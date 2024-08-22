@@ -1,0 +1,116 @@
+.shop-now {
+  margin: 40px auto 0 auto;
+  height: 120px;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 984px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  font-family: var(--f-inter);
+}
+
+.shop-now > * {
+  width: 50%;
+}
+
+.shop-now img {
+  transform: translateY(10%);
+  transition: transform 1.5s;
+}
+
+.shop-now .shop-now__info {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+
+.shop-now .shop-now__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 40px;
+}
+
+.shop-now .shop-now__info::before,
+.shop-now .shop-now__info::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.shop-now .shop-now__info::before {
+  z-index: -1;
+  left: -50px;
+  bottom: 0;
+  width: calc(100% + 100px);
+  height: 100%;
+  transform: skew(0, -18deg) rotate(18deg);
+  background-color: #2f44f9;
+}
+
+.shop-now:hover .shop-now__info::before {
+  width: calc(100% + 150px);
+  transform: skew(0, 18deg) rotate(-18deg);
+}
+
+.shop-now:hover .shop-now__info::after {
+  transform: scale(1.2);
+  left: 40px;
+  top: -40px;
+}
+
+.shop-now:hover img {
+  transform: translateY(10%) scale(1.02);
+}
+
+.shop-now .shop-now__info::after {
+  left: -10px;
+  top: -20px;
+  width: 110px;
+  height: 110px;
+  border: 28px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.shop-now .shop-now__button {
+  font-family: inherit;
+  color: #fff;
+  background-color: #f73e2a;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  white-space: nowrap;
+  padding: 10px 16px;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 400px) {
+  .shop-now img {
+    transform: scale(1.1);
+  }
+
+  .shop-now:hover img {
+    transform: scale(1.12);
+  }
+
+  .shop-now .shop-now__info {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .shop-now .shop-now__title {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0;
+    width: 100%;
+  }
+}

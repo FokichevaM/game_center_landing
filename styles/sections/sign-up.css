@@ -1,0 +1,79 @@
+.sign-up .container .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: var(--form-bg);
+  border-radius: 6px;
+  height: 205px;
+  width: 100%;
+}
+
+.sign-up h3 {
+  font-family: var(--f-inter);
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 800;
+  color: var(--article-title-color);
+  max-width: 270px;
+}
+
+.sign-up form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+
+.sign-up form > * {
+  height: 50px;
+}
+
+.sign-up input {
+  font-family: var(--f-inter);
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: none;
+  padding: 0 20px;
+}
+
+.sign-up input::placeholder {
+  color: #6f6f6f;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.sign-up button {
+  background-color: var(--badge-red-bg);
+  border-radius: 6px;
+  font-family: var(--f-manrope);
+  font-size: 14px;
+  color: #fff;
+  padding: 0 45px;
+}
+
+@media only screen and (max-width: 400px) {
+  .sign-up .container .content {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 25px;
+  }
+
+  .sign-up form {
+    flex-direction: column;
+    gap: 14px;
+    width: 80%;
+  }
+
+  .sign-up form input {
+    width: 100%;
+  }
+
+  .sign-up h3 {
+    margin: 0;
+  }
+}
