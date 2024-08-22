@@ -66,7 +66,7 @@
   margin: 14px 0 20px 0;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .banner {
     flex-direction: column;
     height: fit-content;

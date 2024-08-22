@@ -245,7 +245,7 @@ section.with-sidebar .with-sidebar__sider .article-short:not(:last-child) {
   display: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   section.with-sidebar .container {
     flex-direction: column;
   }

@@ -289,7 +289,7 @@ a.article-card:hover {
   color: var(--article-title-color);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   section.with-sidebar .with-related__articles .article-column img {
     width: 100%;
   }

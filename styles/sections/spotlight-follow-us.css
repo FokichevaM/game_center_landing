@@ -12,7 +12,7 @@
 }
 
 .follow-us .follow-us__buttons button {
-  color: #183354;
+  color: var(--article-title-color);
   background-color: var(--form-bg);
   border-radius: 4px;
   display: flex;
